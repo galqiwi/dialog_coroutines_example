@@ -1,11 +1,10 @@
-
 def calculator():
     print('Введи запрос, а я его вычислю')
     command = yield
     try:
         print(f'{command}={eval(command)}')
     except SyntaxError:
-        print('Я не понял, о чём ты')
+        print('Не понимаю, о чём вы.')
 
 
 def bot():
